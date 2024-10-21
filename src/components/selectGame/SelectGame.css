@@ -1,0 +1,56 @@
+.select-game {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  position: relative;
+  align-items: center;
+  padding: 0 15px;
+  gap: 0 10px;
+  width: 100%;
+  min-height: 50px;
+  background-color: rgba(76, 96, 133, 0.2);
+  border-radius: 2px;
+  cursor: text;
+}
+.select-game-img-default {
+}
+.select-game-input {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+.select-game-label {
+  position: absolute;
+  z-index: -20;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  font-size: 14px;
+
+  transition: all 0.2s ease-in-out;
+}
+.select-game-input:focus ~ .select-game-label,
+.select-game-input:valid ~ .select-game-label {
+  font-size: 12px;
+  top: 25%;
+}
+.select-game-arrow {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+.select-game-cancel {
+  display: none;
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+}
+.select-game-input:valid ~ .select-game-arrow {
+  display: none;
+}
+.select-game-input:valid ~ .select-game-cancel {
+  display: block;
+}

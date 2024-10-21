@@ -1,0 +1,161 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 5px;
+  background-color: #313648;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+}
+.product-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.on-sale {
+  display: flex;
+  align-items: center;
+  width: 64px;
+  min-height: 14px;
+  gap: 6px;
+}
+.on-sale-point {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #38e29c;
+}
+.on-sale-text {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.in-stock {
+  display: flex;
+}
+.in-stock-text {
+  padding: 3px 10px;
+  border: 1px solid #37cb90;
+  border-radius: 3px;
+  color: #37cb90;
+  font-size: 12px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 65px;
+  height: 45px;
+  background-color: #363e54;
+  border-radius: 5px;
+  cursor: text;
+}
+.quantity:hover {
+  background-color: #3d4862;
+}
+.quantity:hover > .change-quantity,
+.quantity-input:focus ~ .change-quantity {
+  opacity: 1;
+}
+.quantity-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+.change-quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  opacity: 0;
+
+  transition: opacity 0.2s ease-in-out;
+}
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.arrow-down {
+}
+
+.arrow-up,
+.arrow-down {
+  width: 12px;
+  cursor: pointer;
+}
+
+.arrow-up:hover,
+.arrow-down:hover {
+  fill: #37cb90;
+}
+
+.card-img {
+  display: flex;
+}
+.item-img {
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.x {
+  display: flex;
+  justify-content: space-between;
+}
+.item-name {
+  font-size: 18px;
+  align-self: center;
+}
+.game-content-img {
+  display: flex;
+  border: 1px solid #37cb90;
+  border-radius: 36px;
+  padding: 4px 0;
+}
+.game-img {
+  object-fit: contain;
+}
+
+.price-content {
+  display: flex;
+  min-height: 19px;
+  gap: 10px;
+}
+.price,
+.last-price {
+  font-size: 16px;
+}
+.last-price {
+  position: relative;
+  display: flex;
+}
+.last-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 101%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: red;
+}
+.description {
+  font-size: 12px;
+  color: #ffffffbf;
+}
+.card-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.Details {
+}
+.Add {
+}

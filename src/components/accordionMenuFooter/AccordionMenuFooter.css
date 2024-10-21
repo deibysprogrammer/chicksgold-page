@@ -1,0 +1,9 @@
+.accordium-menu-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.accordium-menu-footer-list {
+  display: flex;
+  flex-direction: column;
+}

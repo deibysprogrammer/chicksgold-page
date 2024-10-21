@@ -1,0 +1,65 @@
+.accordium-menu-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.accordium-menu-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid rgba(76, 96, 133, 0.2);
+  background-color: #262833;
+  cursor: pointer;
+}
+
+.accordium-menu-sublist {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  background-color: #2d3344;
+}
+
+.arrow-img-rotate {
+  transform: rotate(180deg);
+}
+
+.accordium-menu-sublist-visible {
+  height: auto;
+  overflow: visible;
+}
+
+.trending-section {
+  margin: 20px 0 15px 0;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.all-section {
+  margin: 5px 0 10px 0;
+  font-size: 14px;
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: c;
+  margin-bottom: 5px;
+}
+
+.game-icon {
+  object-fit: contain;
+  margin-right: 15px;
+}
+.game-name {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+}

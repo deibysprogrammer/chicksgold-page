@@ -1,0 +1,195 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #2f3141;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #2a2b3b;
+}
+
+.payment-methods-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.payment-method {
+}
+
+.more-payment-methods {
+  cursor: pointer;
+}
+
+.cryptos {
+  display: flex;
+  gap: 5px;
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px 40px 20px 40px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #4b6085;
+}
+
+.social-network-link {
+  display: flex;
+  width: 38px;
+  height: 38px;
+}
+
+.social-network-img {
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 78px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.logo-chicksgold {
+  margin-bottom: 8px;
+}
+.info-section {
+  display: none;
+}
+.info-title {
+  white-space: nowrap;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.info-list {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #ffffffbf;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.info-mobile {
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.truspilot-name {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+.star {
+  display: grid;
+  place-items: center;
+  background-color: #00b679;
+  width: 17px;
+  height: 17px;
+}
+.star-img {
+}
+.copyright {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .payment-methods-contain {
+    flex-direction: row;
+    padding: 15px 40px;
+    width: 100%;
+  }
+  .social-networks {
+    justify-content: flex-start;
+  }
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+  }
+  .info-mobile {
+    display: none;
+  }
+  .logo-chicksgold {
+    margin-bottom: 24px;
+  }
+  .email {
+    width: auto;
+  }
+  .reviews {
+    width: auto;
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .payment-methods-contain {
+    flex-direction: row;
+    padding: 15px 0;
+    justify-content: flex-start;
+    width: 958px;
+  }
+  .about,
+  .social-networks {
+    width: 958px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .payment-methods-contain,
+  .about,
+  .social-networks,
+  .info {
+    width: 1250px;
+  }
+  .reviews {
+    flex-direction: row-reverse;
+  }
+}

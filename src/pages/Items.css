@@ -1,0 +1,179 @@
+.background {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  margin-top: 68px;
+  padding: 120px 0 60px 0;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 100vw;
+  gap: 20px 0;
+}
+.h1 {
+  font-size: 40px;
+}
+.articles-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filters {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.search {
+}
+.price {
+}
+.item-type {
+}
+.content-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 50px;
+  gap: 50px;
+  width: 100%;
+  background-color: #2f3141;
+  border: 1px solid #4b6085;
+  border-radius: 5px;
+}
+.info-filter {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.show-cards {
+  display: none;
+}
+.filter-sort-by {
+  width: 100%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 20px;
+}
+
+.pagination {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-self: center;
+}
+.arrow {
+  line-height: 12px;
+  border: 1px solid #5662d4;
+}
+
+.arrow:hover {
+  background-color: #5662d4;
+}
+.number-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow,
+.number-button {
+  text-decoration: none;
+  color: #ffffff;
+}
+.number-button:not(.number-button-active, .no-hover):hover {
+  background-color: rgb(86, 98, 212, 0.5);
+}
+
+.number-button-active {
+  background-color: #5662d4;
+}
+
+.arrow,
+.number-button {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .articles {
+    padding: 0;
+    width: 528px;
+  }
+  .info-filter {
+    justify-content: space-between;
+  }
+  .show-cards {
+    display: flex;
+    color: #ffffffbf;
+    font-size: 14px;
+  }
+  .filter-sort-by {
+    width: 198px;
+  }
+  .content-cards {
+    width: 100%;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .arrow,
+  .number-button {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .articles {
+    width: 958px;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .pagination {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .articles {
+    width: 1250px;
+  }
+  .articles-filters {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-select-game {
+    min-width: 294px;
+  }
+  .filters {
+    max-width: 309px;
+  }
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+}

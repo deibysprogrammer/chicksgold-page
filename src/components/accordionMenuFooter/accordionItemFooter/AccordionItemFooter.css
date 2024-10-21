@@ -1,0 +1,45 @@
+.accordium-menu-item-footer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.accordium-menu-footer-button {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #4c6085;
+  cursor: pointer;
+}
+
+.accordium-menu-footer-sublist {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.arrow-image:focus {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.arrow-img-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+.accordium-menu-footer-sublist-visible {
+  height: auto;
+  border-bottom: 1px solid #4c6085;
+}
+.item {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 15px 0;
+}
