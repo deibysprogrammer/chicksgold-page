@@ -24,6 +24,10 @@ This challenge involves developing a **front-end application** based on a **mock
 
 - **File Structuring:** The project's file structure combines organization by type (e.g., components, pages, helpers) with organization by feature within those types (e.g., *card/*, *footer/* inside *components*).
 
+## Live Demo :tv:
+
+The application was deployed on GitHub Pages for a live demonstration, accessible via this [Link](https://deibysprogrammer.github.io/chicksgold-page/)
+
 ## Getting Started :rocket:
 
 ### Prerequisites :page_facing_up:
