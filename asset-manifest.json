@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chicksgold-page/static/css/main.5a6e5441.css",
-    "main.js": "/chicksgold-page/static/js/main.ceda56ee.js",
+    "main.css": "/chicksgold-page/static/css/main.0b23de58.css",
+    "main.js": "/chicksgold-page/static/js/main.c58d2da7.js",
     "static/js/453.c0ef3d23.chunk.js": "/chicksgold-page/static/js/453.c0ef3d23.chunk.js",
     "static/media/dragon-ball-z-budokai-tenkaichi-3.webp": "/chicksgold-page/static/media/dragon-ball-z-budokai-tenkaichi-3.763887eb064a9f4b3623.webp",
     "static/media/clean-mr-fuzzy-mascot-suit.png": "/chicksgold-page/static/media/clean-mr-fuzzy-mascot-suit.87d20f7a802303d3e635.png",
@@ -53,12 +53,12 @@
     "static/media/oathplate-helm.webp": "/chicksgold-page/static/media/oathplate-helm.1cf2c4803e17e2618118.webp",
     "static/media/oathplate-legs.webp": "/chicksgold-page/static/media/oathplate-legs.8bf0f08efa701c6e4a29.webp",
     "index.html": "/chicksgold-page/index.html",
-    "main.5a6e5441.css.map": "/chicksgold-page/static/css/main.5a6e5441.css.map",
-    "main.ceda56ee.js.map": "/chicksgold-page/static/js/main.ceda56ee.js.map",
+    "main.0b23de58.css.map": "/chicksgold-page/static/css/main.0b23de58.css.map",
+    "main.c58d2da7.js.map": "/chicksgold-page/static/js/main.c58d2da7.js.map",
     "453.c0ef3d23.chunk.js.map": "/chicksgold-page/static/js/453.c0ef3d23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a6e5441.css",
-    "static/js/main.ceda56ee.js"
+    "static/css/main.0b23de58.css",
+    "static/js/main.c58d2da7.js"
   ]
 }
