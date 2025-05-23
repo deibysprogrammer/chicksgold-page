@@ -43,7 +43,7 @@ To get this application running in a local environment, follow these steps:
 
 - **Clone the Repository:** Open a terminal or command prompt, navigate to your desired project folder, and execute the following commands:
 ``` bash
-git https://github.com/deibysprogrammer/chicksgold-page.git
+git clone https://github.com/deibysprogrammer/chicksgold-page.git
 cd chicksgold-page
 ```
 - **Download Directly:** If preferred, you can download the code as a *.zip* file from the repository page on GitHub and then extract it into your chosen folder.
