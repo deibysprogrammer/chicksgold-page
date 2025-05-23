@@ -1,0 +1,40 @@
+/*============================================================
+                            General
+==============================================================*/
+
+.menu-burger-list-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+  min-height: 67px;
+  border-bottom: 2px solid #4c608533;
+}
+.menu-burger-list-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+.list-arrow-rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+.menu-burger-list-item-title {
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+.menu-burger-list-item-title:hover {
+  text-decoration: underline;
+}
+.menu-burger-list-items {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 0;
+  padding: 14px 24px;
+  gap: 24px;
+  background-color: #2d3344;
+}
+.items-visible {
+  display: flex;
+}

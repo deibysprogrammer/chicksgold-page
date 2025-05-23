@@ -1,0 +1,177 @@
+/*============================================================
+                            General
+==============================================================*/
+
+.navBar {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  width: 100%;
+  min-height: 67px;
+  left: 0;
+  top: 0;
+  background-color: #303141;
+  border-bottom: 1px solid #3e4863;
+}
+
+.menu-burger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  left: -100%;
+  top: 0;
+  z-index: 100;
+  background-color: #262833;
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.openMenuBurger {
+  left: 0;
+  opacity: 100;
+
+  transition: opacity 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.menu-burguer-button {
+  display: none;
+}
+
+.container-chicks-logo {
+  display: none;
+}
+
+.chicks-logo {
+  width: 140px;
+  margin-bottom: 8px;
+}
+
+.nav-main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bar-vertical {
+  width: 1px;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-preferences {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.button-cart,
+.button-sign-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-cart,
+.button-sign-in {
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.button-cart {
+  position: relative;
+}
+
+.button-cart-number-items {
+  display: none;
+}
+
+.button-cart:hover {
+  background-color: #444B60;
+}
+.button-cart:active{
+  background-color: #292d3b;
+}
+
+.button-sign-in {
+  color: #000000;
+  background-color: #39e29d;
+}
+
+.button-sign-in:hover {
+  background-color: #49fcae;
+}
+
+.button-sign-in:active{
+  background-color: #25A371;
+}
+
+/*============================================================
+                      Responsive design
+==============================================================*/
+
+@media (max-width: 1280px) {
+  .menu-burguer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 8px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .container-chicks-logo {
+    display: flex;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav-item-type-currency {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-preferences {
+    gap: 10px;
+  }
+  .button-cart-title {
+    display: none;
+  }
+  .button-cart-number-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #ff0000;
+    text-align: center;
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-chicks-logo {
+    display: flex;
+    padding-right: 50px;
+    margin-right: 26px;
+    border-right: 1px solid #ffffff;
+  }
+}

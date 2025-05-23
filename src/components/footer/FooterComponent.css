@@ -1,0 +1,217 @@
+/*============================================================
+                            General
+==============================================================*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #303141;
+}
+
+.container-payment-methods {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  width: 100%;
+  height: 92px;
+  background-color: #2b2c3b;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  width: 1250px;
+  gap: 10px;
+}
+
+.payment-method {
+  width: auto;
+  height: 32px;
+  user-select: none;
+}
+
+.cryptocurrencies {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 4px;
+}
+.cryptocurrency {
+  width: auto;
+  height: 24px;
+  user-select: none;
+}
+.more-cryptocurrencies {
+  color: #bebfc3;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  width: 1250px;
+}
+.container-about-us {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 52px;
+}
+.social-networks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 104px;
+  border-bottom: 1px solid #4c6085;
+  user-select: none;
+}
+
+.social-network {
+  width: 32px;
+  height: 32px;
+}
+
+.sections-about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+}
+.section-contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+.logo-footer:hover > .logo-footer-image {
+  fill: #ffffff;
+}
+
+.logo-footer-image {
+  width: auto;
+  height: 48px;
+}
+
+.section-links {
+  display: flex;
+  gap: 120px;
+}
+
+.section-container-trustpilot {
+  display: flex;
+  align-items: flex-start;
+}
+
+.trustpilot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.stars {
+  display: flex;
+  gap: 2px;
+}
+.star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #00b67a;
+}
+.reviews {
+  color: #bdbec5;
+}
+.reviews:hover {
+  text-decoration: underline;
+}
+
+.section-links-small-screens {
+  display: none;
+}
+
+.section-links-small-screens .menu-burger-list-items {
+  background-color: transparent;
+  border-bottom: 1px solid #4c6085;
+}
+.section-links-small-screens .menu-burger-list-section {
+  border-bottom: 2px solid #4c6085;
+}
+
+.container-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.copyright {
+  color: #bdbec5;
+}
+
+/*============================================================
+                      Responsive design
+==============================================================*/
+
+@media (max-width: 1280px) {
+  .payment-methods,
+  .container-info {
+    width: 950px;
+  }
+  .section-links {
+    gap: 60px;
+  }
+  .trustpilot {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 992px) {
+  .payment-methods,
+  .container-info {
+    width: 750px;
+  }
+  .section-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-payment-methods {
+    padding: 15px 0;
+    height: auto;
+  }
+  .payment-methods,
+  .container-info {
+    width: 80%;
+  }
+  .payment-methods {
+    flex-direction: column;
+  }
+  .social-networks {
+    justify-content: center;
+  }
+  .sections-about {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .section-contact-us {
+    gap: 5px;
+  }
+  .email {
+    text-align: center;
+  }
+  .section-links {
+    display: none;
+  }
+  .section-links-small-screens {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    .menu-burger-edit {
+      border-bottom: 2px solid #4c6085;
+    }
+  }
+}

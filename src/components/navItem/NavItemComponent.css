@@ -1,0 +1,36 @@
+/*============================================================
+                            General
+==============================================================*/
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 66px;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+}
+.nav-item:hover {
+  background-color: #37384b;
+  border-left: 2px solid #39e29d;
+}
+
+.nav-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-transform: uppercase;
+
+  transition: color 0.3s ease-in-out;
+}
+.nav-item:hover > .nav-item-title {
+  color: #39e29d;
+}
+
+.nav-item-arrow {
+  transition: stroke 0.3s ease-in-out;
+}
+.nav-item:hover > .nav-item-arrow {
+  stroke: #39e29d;
+  transform: rotate(180deg);
+}

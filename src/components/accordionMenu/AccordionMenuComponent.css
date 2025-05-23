@@ -1,0 +1,33 @@
+/*============================================================
+                            General
+==============================================================*/
+
+.menu-burger-header {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  min-height: 67px;
+  border-bottom: 2px solid #4c6085;
+  gap: 20px;
+}
+.menu-burger-button-close {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.menu-burger-button-close:hover {
+  background-color: #343441;
+}
+.menu-burger-button-close:active {
+  background-color: #292d3b;
+}
+.menu-burger-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}

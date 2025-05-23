@@ -1,0 +1,48 @@
+/*============================================================
+                            General
+==============================================================*/
+
+.search-product:hover {
+  background-color: #77819c33;
+}
+.search-product {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #4c608533;
+  user-select: none;
+  cursor: text;
+}
+.search-product-input {
+  margin-top: 12px;
+  width: 100%;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+.search-product-title {
+  position: absolute;
+  left: 46px;
+  top: 17px;
+  font-size: 14px;
+
+  transition: all 0.2s ease-in-out;
+}
+.search-product-input:focus ~ .search-product-title,
+.search-product-input:valid ~ .search-product-title {
+  top: 6px;
+  font-size: 12px;
+}
+
+.search-product-cancel-button {
+  display: none;
+}
+.search-product-input:valid ~ .search-product-cancel-button {
+  display: flex;
+  z-index: 100;
+}
